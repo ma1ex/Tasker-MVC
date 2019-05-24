@@ -1,0 +1,299 @@
+/** User StyleSheet */
+
+/* ==============================================
+-------------- Table of Contents ----------------
+
+	1.	General
+	2.	Helper Classes
+	3.	Elements / Bootstrap Overwrite
+	  - 3.1	Alerts
+	  - 3.2	Icons
+	  - 3.3	List Groups
+	  - 3.4	Buttons & Badges
+	  - 3.5	Dropdown Menu
+	  - 3.6	Forms
+	  - 3.7	Slider
+	  - 3.8	Tooltip
+	  - 3.9	Popever
+	  - 3.10 Modal
+	  - 3.11 Progress Bars
+	  - 3.12 Collapses
+	  - 3.13 Tabs
+	4.	Header
+	5.	Content
+	6.	index.html
+	7.	Portfolio
+	8.	Single portfolio
+	9. 	Category.html
+	10.	Blog.html
+	11.	Single.html
+	12.	Product.html
+	13.	Cart.html
+	14.	Compare-Products.html
+	15.	Checkout.html
+	16.	Contact.html
+	17.	Footer
+	18.	Scroll Top Button
+	19. About Us
+	20.	404 Page
+
+-------------------------------------------------
+===============================================*/
+
+/* ==============================================
+-------------- General Gamma --------------------
+6DBCDB (109, 188, 219) - голубой (основной)
+79CEC7 (121, 206, 199) - бирюзовый (основной)
+F68E56 (246, 142, 86) - оранжевый
+FD5C48 (253, 92, 72) - красный
+E1A198 (225, 161, 152) - темно-розовый
+FFF899 (255, 248, 153) - лимонный
+C4DF9C (196, 223, 156) - зеленый (салатовый)
+
+444645 (68, 70, 69) - черный #1 (для текста)
+7C807E (124, 128, 126) - черный #2 (для текста)
+
+E3E3E3 (227, 227, 227) - серый #1
+CCCCCC (204, 204, 204) - серый #2
+F2F2F2 (242, 242, 242) - серый #3
+E1E4E5 (225, 228, 229) - серый #4 для фонов
+676A70 (103, 106, 112) - для заголовков на сером фоне #4
+-------------------------------------------------
+===============================================*/
+
+/*@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-Regular.ttf');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.ttf');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gudea';
+	src: url('../fonts/Gudea-Bold.ttf');
+
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-Regular.ttf');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PT Sans';
+	src: url('../fonts/PT_Sans-Web-Regular.ttf');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gabriela';
+	src: url('../fonts/Gabriela-Regular.ttf');
+
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+/* =============================================
+-------------------  1.General ---------------
+==============================================*/
+
+
+
+
+
+
+/* =============================================
+----------------- 2.Helper Classes -------------
+==============================================*/
+
+.border {
+	border: solid 1px fuchsia;
+}
+
+.border-lime {
+	border: solid 1px lime;
+}
+
+.no-border {
+	border: transparent;
+}
+
+/* === Colors ================================ */
+
+.white {
+	background: #FFF;
+	border-color: #FFF;
+}
+
+.red {
+	background: #FD5C48;
+	color: #FFF;
+}
+
+.med-blue {
+	color: #6DBCDB;
+}
+
+.med-green {
+	color: #79CEC7;
+}
+
+.med-orange {
+	color: #F68E56;
+}
+
+.med-red {
+	color: #FD5C48;
+}
+
+.med-bg-blue {
+	background-color: #6DBCDB;
+}
+
+.med-bg-red {
+	background-color: #FD5C48;
+}
+
+.med-bg-green {
+	background-color: #6BD691;
+}
+
+.med-bg-gray {
+	background-color: #F9F9F9;
+}
+/* === /Colors =============================== */
+
+.inline-block {
+	display: inline-block;
+}
+
+.font-norm {
+	font-size: 1rem;
+}
+
+.font-sm {
+	font-size: 0.7rem; /* 0.7rem */
+}
+
+.font-md {
+	font-size: 1.2rem; /* 1.3 */
+}
+
+.font-lg {
+	font-size: 2rem;
+}
+
+.valign-md {
+	vertical-align: middle;
+}
+
+.width-norm {
+	width: 1rem;
+}
+
+.width-md {
+	width: 1.2rem;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+.all-caps {
+	text-transform: uppercase;
+}
+
+.norm-caps {
+	text-transform: none;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.min-width-325 {
+	min-width: 325px;
+}
+
+
+/* Класс скрытия/отображения должен 
+быть как можно ниже по коду, чтобы 
+правильно срабатывать! */
+.show {
+	display: block !important;
+}
+
+/* === Effects =============================== */
+
+.block-shadow {
+	/*background: #FFF;*/
+	border-bottom: solid 1px #BFBFBF;
+	/*border-radius: 5px;*/
+	/*-moz-border-radius: 5px;*/
+	/*-webkit-border-radius: 5px;*/
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.block-shadow-light {
+	box-shadow: 0px 2px 4px 0px hsla(0, 0%, 0%, 0.2);
+	-moz-box-shadow: 0px 2px 4px 0px hsla(0, 0%, 0%, 0.2);
+	-webkit-box-shadow: 0px 2px 4px 0px hsla(0, 0%, 0%, 0.2);
+}
+
+.block-shadow-superlight {
+	box-shadow: 0px 1px 3px 0px hsla(0, 0%, 0%, 0.2);
+	-moz-box-shadow: 0px 1px 3px 0px hsla(0, 0%, 0%, 0.2);
+	-webkit-box-shadow: 0px 1px 3px 0px hsla(0, 0%, 0%, 0.2);
+}
+
+.shadow {
+	/*background: rgba(255, 255, 255, 0.2);*/
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	-ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	/*z-index: 99;*/
+}
+
+/* === /Effects ============================== */
+
+/* END === 2.Helper Classes ============== END */
+
+
+/* =============================================
+-------- 3.Elements / Bootstrap Overwrite ------
+==============================================*/
+
+
+/* /END === 3.Elements / Bootstrap Overwrite */
+
+
+
+/* =============================================
+-------- 5. Navigation -------------------------
+==============================================*/
+
+
+
+
+
+
+
